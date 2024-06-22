@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4323a1fb-89c7-4360-9af7-ee69ae3b0f66" name="Changes" comment="1.3">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/buildLauncher.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/LauncherApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/WindowApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forge.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OB1LAB.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OB1LAB.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/build/OB1LAB.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/build/accept.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/build/asset-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/build/delete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/build/discord.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/build/fonts/elliot.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/build/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/build/static/css/main.ea39f222.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/build/static/css/main.ea39f222.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/build/static/js/main.a3eaf4c2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/build/static/js/main.a3eaf4c2.js.LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/build/static/js/main.a3eaf4c2.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/build/static/media/elliot.2aeaa9d1333dcd4ec6ea.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/build/wrench.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2i1EeJB1j2WtlDBxix9BKpd8ia6" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/OB1LAB&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;E:\\OB1LAB\\buildLauncher\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\vital\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4323a1fb-89c7-4360-9af7-ee69ae3b0f66" name="Changes" comment="" />
+      <created>1718649776601</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718649776601</updated>
+      <workItem from="1718649777892" duration="584000" />
+      <workItem from="1718650379468" duration="14943000" />
+      <workItem from="1718730554501" duration="6607000" />
+      <workItem from="1718745886138" duration="6225000" />
+      <workItem from="1718793446142" duration="11967000" />
+      <workItem from="1718810191602" duration="3021000" />
+      <workItem from="1718813260274" duration="14255000" />
+      <workItem from="1718845255375" duration="607000" />
+      <workItem from="1718981170387" duration="51000" />
+      <workItem from="1719004425190" duration="6658000" />
+      <workItem from="1719020445632" duration="51000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="1.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.3" />
+  </component>
+</project>

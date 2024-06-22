@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "./static/css/main.ea39f222.css",
+    "main.js": "./static/js/main.a3eaf4c2.js",
+    "static/media/elliot.woff2": "./static/media/elliot.2aeaa9d1333dcd4ec6ea.woff2",
+    "index.html": "./index.html",
+    "main.ea39f222.css.map": "./static/css/main.ea39f222.css.map",
+    "main.a3eaf4c2.js.map": "./static/js/main.a3eaf4c2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea39f222.css",
+    "static/js/main.a3eaf4c2.js"
+  ]
+}
