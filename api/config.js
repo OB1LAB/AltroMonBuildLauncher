@@ -1,5 +1,5 @@
 const config = {
-	serverUrl: 'https://altromon.ob1lab.xyz'
-}
+  serverUrl: "https://altromon.ob1lab.ru",
+};
 
-module.exports = config
+module.exports = config;

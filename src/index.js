@@ -14,13 +14,22 @@ if (!settingsKeys.includes("ram")) {
 if (!settingsKeys.includes("player")) {
   settings.player = "";
 }
+if (!settingsKeys.includes("password")) {
+  settings.password = "";
+}
+if (!settingsKeys.includes("uuid")) {
+  settings.uuid = "";
+}
+if (!settingsKeys.includes("accessToken")) {
+  settings.accessToken = "";
+}
 if (!settingsKeys.includes("selectedServer")) {
   settings.selectedServer = "Hitech_1.12.2_forge";
 }
 fs.writeFile(
   `${process.env.APPDATA}/AltroMon/settings.json`,
   JSON.stringify(settings),
-  () => console.log("Player", settings.player),
+  () => {},
 );
 const WindowApi = require("../api/WindowApi");
 const LauncherApi = require("../api/LauncherApi");
@@ -39,20 +48,20 @@ const createWindow = () => {
       disableHtmlFullscreenWindowResize: true,
       nodeIntegration: true,
       contextIsolation: false,
-      devTools: false,
+      devTools: true,
       offscreen: false,
+      webSecurity: false,
     },
     icon: join(__dirname, "OB1LAB.png"),
     resizable: false,
   });
-  // mainWindow.loadURL("http://192.168.0.101:3000");
   mainWindow.once("ready-to-show", () => {
     setTimeout(() => {
       mainWindow.show();
     }, 500);
   });
+  // mainWindow.loadURL("http://localhost:3000");
   mainWindow.loadFile(join(__dirname, "build/index.html"));
-  ipcMain.on("test", () => console.log("test"));
   ipcMain.on("request-main-window", (event) => {
     event.sender.send("response-main-window", mainWindow);
   });
@@ -66,6 +75,7 @@ app.whenReady().then(() => {
   ipcMain.on("launcher-getRam", LauncherApi.getRam);
   ipcMain.on("launcher-setRam", LauncherApi.setRam);
   ipcMain.on("launcher-setPlayer", LauncherApi.setPlayer);
+  ipcMain.on("launcher-setServer", LauncherApi.setServer);
   ipcMain.on("launcher-getPlayer", (event) => {
     LauncherApi.getPlayer(event);
   });

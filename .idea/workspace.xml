@@ -5,36 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4323a1fb-89c7-4360-9af7-ee69ae3b0f66" name="Changes" comment="1.3">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/buildLauncher.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/LauncherApi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/WindowApi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forge.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OB1LAB.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OB1LAB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/build/OB1LAB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/build/accept.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/build/asset-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/build/delete.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/build/discord.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/build/fonts/elliot.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/build/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/build/static/css/main.ea39f222.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/build/static/css/main.ea39f222.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/build/static/js/main.a3eaf4c2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/build/static/js/main.a3eaf4c2.js.LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/build/static/js/main.a3eaf4c2.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/build/static/media/elliot.2aeaa9d1333dcd4ec6ea.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/build/wrench.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/build/static/css/main.7bd9da27.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/build/static/css/main.7bd9da27.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/LauncherApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/LauncherApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/build/static/css/main.ea39f222.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/build/static/css/main.ea39f222.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/build/static/js/main.a3eaf4c2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/build/static/js/main.a3eaf4c2.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/build/static/js/main.a3eaf4c2.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,15 +54,15 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/OB1LAB&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/OB1LAB/AltromonLaucnher&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;E:\\OB1LAB\\buildLauncher\\node_modules\\prettier&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;D:\\OB1LAB\\AltroMonBuildLauncher\\node_modules\\prettier&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\vital\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\JetBrains\\WebStorm\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -101,6 +85,47 @@
       <workItem from="1718981170387" duration="51000" />
       <workItem from="1719004425190" duration="6658000" />
       <workItem from="1719020445632" duration="51000" />
+      <workItem from="1719255367777" duration="885000" />
+      <workItem from="1722704840479" duration="4260000" />
+      <workItem from="1722763865727" duration="1138000" />
+      <workItem from="1722781421217" duration="842000" />
+      <workItem from="1722789672965" duration="631000" />
+      <workItem from="1722791577936" duration="296000" />
+      <workItem from="1723024707536" duration="419000" />
+      <workItem from="1723026161152" duration="50000" />
+      <workItem from="1723026273033" duration="16005000" />
+      <workItem from="1723069303794" duration="177000" />
+      <workItem from="1723069854962" duration="81000" />
+      <workItem from="1723070039863" duration="183000" />
+      <workItem from="1723070508341" duration="29000" />
+      <workItem from="1723074168868" duration="18000" />
+      <workItem from="1723074599928" duration="49000" />
+      <workItem from="1723075231618" duration="160000" />
+      <workItem from="1723075722256" duration="19000" />
+      <workItem from="1723077405794" duration="470000" />
+      <workItem from="1723078208755" duration="332000" />
+      <workItem from="1723114847825" duration="138000" />
+      <workItem from="1723116695889" duration="1729000" />
+      <workItem from="1723235172409" duration="642000" />
+      <workItem from="1723236066124" duration="3000" />
+      <workItem from="1723236223280" duration="121000" />
+      <workItem from="1723236589085" duration="14000" />
+      <workItem from="1723240230705" duration="3816000" />
+      <workItem from="1723284489347" duration="20000" />
+      <workItem from="1723285318497" duration="315000" />
+      <workItem from="1723300532772" duration="875000" />
+      <workItem from="1723309645098" duration="11660000" />
+      <workItem from="1723327443720" duration="5000" />
+      <workItem from="1723328654096" duration="267000" />
+      <workItem from="1723329592200" duration="143000" />
+      <workItem from="1723330113416" duration="14000" />
+      <workItem from="1723330414589" duration="2155000" />
+      <workItem from="1723333458012" duration="2606000" />
+      <workItem from="1723338328808" duration="5648000" />
+      <workItem from="1723368888014" duration="4350000" />
+      <workItem from="1723377818745" duration="186000" />
+      <workItem from="1723385553375" duration="1454000" />
+      <workItem from="1723387575183" duration="389000" />
     </task>
     <servers />
   </component>
