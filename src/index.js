@@ -48,7 +48,7 @@ const createWindow = () => {
       disableHtmlFullscreenWindowResize: true,
       nodeIntegration: true,
       contextIsolation: false,
-      devTools: true,
+      devTools: false,
       offscreen: false,
       webSecurity: false,
     },

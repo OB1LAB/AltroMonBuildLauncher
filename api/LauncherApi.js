@@ -124,11 +124,11 @@ class LauncherApi {
       MainWindow.webContents.send("launcher-gameInit", "");
     }
     const runtime = spawn(
-      "java.exe",
+      `${process.env.APPDATA}/AltroMon/${jdk}/bin/java.exe`,
       cmd.split(" ").map((line) => `"${line}"`),
       {
         shell: "powershell.exe",
-        cwd: `${process.env.APPDATA}/AltroMon/${jdk}/bin`,
+        cwd: `${path}/${selectedServer}`,
       },
     );
     runtime.stderr.on("data", (data) => {
