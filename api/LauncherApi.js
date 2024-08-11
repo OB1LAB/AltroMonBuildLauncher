@@ -131,7 +131,7 @@ class LauncherApi {
         cwd: `${path}/${selectedServer}`,
       },
     );
-    runtime.stderr.on("data", (data) => {
+    runtime.stderr.on("data", async (data) => {
       console.log(data.toString());
     });
     runtime.stdout.on("data", (line) => {

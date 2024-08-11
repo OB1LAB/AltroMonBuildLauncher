@@ -2,6 +2,9 @@ const fs = require("fs");
 const { app, BrowserWindow, ipcMain } = require("electron");
 const { join } = require("path");
 const settings = require(`${process.env.APPDATA}/AltroMon/settings.json`);
+const express = require("express");
+const server = express();
+server.use("/", express.static(__dirname));
 
 if (require("electron-squirrel-startup")) {
   app.quit();
@@ -60,8 +63,12 @@ const createWindow = () => {
       mainWindow.show();
     }, 500);
   });
-  mainWindow.loadURL("http://localhost:3000");
-  // mainWindow.loadFile(join(__dirname, "build/index.html"));
+  // mainWindow.loadURL("http://localhost:3000");
+  const infos = server.listen(0, "localhost", () =>
+    mainWindow.loadURL(
+      `http://localhost:${infos.address().port}/build/index.html`,
+    ),
+  );
   ipcMain.on("request-main-window", (event) => {
     event.sender.send("response-main-window", mainWindow);
   });
