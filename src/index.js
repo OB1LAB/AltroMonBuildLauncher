@@ -60,8 +60,8 @@ const createWindow = () => {
       mainWindow.show();
     }, 500);
   });
-  // mainWindow.loadURL("http://localhost:3000");
-  mainWindow.loadFile(join(__dirname, "build/index.html"));
+  mainWindow.loadURL("http://localhost:3000");
+  // mainWindow.loadFile(join(__dirname, "build/index.html"));
   ipcMain.on("request-main-window", (event) => {
     event.sender.send("response-main-window", mainWindow);
   });
