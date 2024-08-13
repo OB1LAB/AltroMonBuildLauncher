@@ -210,9 +210,34 @@ const downloadFiles = async (files, path, sizes, totalSize, MainWindow) => {
     });
     const writer = fs.createWriteStream(pathFile);
     response.data.pipe(writer);
-    response.data.on("end", () => {
-      downloaderSizes += sizes[filename.split("/").slice(3).join("/")];
+    let downloaded = 0;
+    let lastPercent = 0;
+    response.data.on("data", (data) => {
+      downloaded += Buffer.byteLength(data);
+      const newPercent = Math.round(
+        (downloaded / sizes[filename.split("/").slice(3).join("/")]) * 100,
+      );
+      if (newPercent > lastPercent) {
+        lastPercent = newPercent;
+        MainWindow.webContents.send("launcher-download", {
+          content: `Скачивание: ${filename.split("/").pop()}`,
+          step: `Установка [${((downloaderSizes + downloaded) / 1024 / 1024).toFixed(1)}MB/${(totalSize / 1024 / 1024).toFixed(1)}MB]`,
+          progress: (
+            ((downloaderSizes + downloaded) / totalSize) *
+            100
+          ).toFixed(0),
+        });
+      }
     });
+    async function write() {
+      return new Promise((resolve, reject) => {
+        response.data.on("end", () => {
+          downloaderSizes += sizes[filename.split("/").slice(3).join("/")];
+          resolve("complete");
+        });
+      });
+    }
+    await write();
   }
   MainWindow.webContents.send("launcher-download", {
     content: ``,

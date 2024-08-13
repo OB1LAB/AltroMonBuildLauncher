@@ -5,18 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4323a1fb-89c7-4360-9af7-ee69ae3b0f66" name="Changes" comment="1.4">
-      <change afterPath="$PROJECT_DIR$/src/build/static/js/main.aa62d92b.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/build/static/js/main.aa62d92b.js.LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/build/static/js/main.aa62d92b.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/build/static/css/main.643be926.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/build/static/css/main.643be926.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/build/static/js/main.99f7471f.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/build/static/js/main.99f7471f.js.LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/build/static/js/main.99f7471f.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/LauncherApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/LauncherApi.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/build/asset-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/build/static/js/main.e6dd46d3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/build/static/js/main.e6dd46d3.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/build/static/js/main.e6dd46d3.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/build/static/css/main.7bd9da27.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/build/static/css/main.7bd9da27.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/build/static/js/main.aa62d92b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/build/static/js/main.aa62d92b.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/build/static/js/main.aa62d92b.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
@@ -34,6 +39,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -127,7 +135,9 @@
       <workItem from="1723385553375" duration="1454000" />
       <workItem from="1723387575183" duration="2870000" />
       <workItem from="1723391071613" duration="1374000" />
-      <workItem from="1723392742709" duration="4018000" />
+      <workItem from="1723392742709" duration="9172000" />
+      <workItem from="1723413981649" duration="2134000" />
+      <workItem from="1723458773074" duration="10673000" />
     </task>
     <task id="LOCAL-00001" summary="1.4">
       <option name="closed" value="true" />
@@ -153,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723391906556</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1.4">
+      <option name="closed" value="true" />
+      <created>1723397467979</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1723397467980</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
