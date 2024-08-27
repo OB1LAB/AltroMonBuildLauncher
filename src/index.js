@@ -49,6 +49,7 @@ const createWindow = () => {
       nodeIntegration: true,
       contextIsolation: false,
       devTools: false,
+      // devTools: true,
       offscreen: false,
       webSecurity: false,
     },

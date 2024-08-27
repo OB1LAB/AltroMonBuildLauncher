@@ -4,26 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4323a1fb-89c7-4360-9af7-ee69ae3b0f66" name="Changes" comment="1.4">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/build/static/css/main.643be926.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/build/static/css/main.643be926.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/build/static/js/main.99f7471f.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/build/static/js/main.99f7471f.js.LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/build/static/js/main.99f7471f.js.map" afterDir="false" />
+    <list default="true" id="4323a1fb-89c7-4360-9af7-ee69ae3b0f66" name="Changes" comment="1.5">
+      <change afterPath="$PROJECT_DIR$/api/MinecraftApi.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/LauncherApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/LauncherApi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/build/asset-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/build/static/css/main.7bd9da27.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/build/static/css/main.7bd9da27.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/build/static/js/main.aa62d92b.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/build/static/js/main.aa62d92b.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/build/static/js/main.aa62d92b.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/build/static/css/main.643be926.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/build/static/css/main.643be926.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/build/static/js/main.99f7471f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/build/static/js/main.99f7471f.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/build/static/js/main.99f7471f.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +31,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -137,7 +130,15 @@
       <workItem from="1723391071613" duration="1374000" />
       <workItem from="1723392742709" duration="9172000" />
       <workItem from="1723413981649" duration="2134000" />
-      <workItem from="1723458773074" duration="10673000" />
+      <workItem from="1723458773074" duration="11205000" />
+      <workItem from="1723551124522" duration="16000" />
+      <workItem from="1723588056032" duration="1960000" />
+      <workItem from="1723629588035" duration="2822000" />
+      <workItem from="1724516605812" duration="725000" />
+      <workItem from="1724527520498" duration="1099000" />
+      <workItem from="1724694218141" duration="1200000" />
+      <workItem from="1724714848316" duration="2785000" />
+      <workItem from="1724727761454" duration="8820000" />
     </task>
     <task id="LOCAL-00001" summary="1.4">
       <option name="closed" value="true" />
@@ -171,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723397467980</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1.5">
+      <option name="closed" value="true" />
+      <created>1723550614912</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1723550614912</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +190,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="1.3" />
     <MESSAGE value="1.4" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.4" />
+    <MESSAGE value="1.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.5" />
   </component>
 </project>
