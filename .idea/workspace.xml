@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4323a1fb-89c7-4360-9af7-ee69ae3b0f66" name="Changes" comment="1.6">
+    <list default="true" id="4323a1fb-89c7-4360-9af7-ee69ae3b0f66" name="Changes" comment="1.71">
+      <change afterPath="$PROJECT_DIR$/src/build/altromonlauncher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/build/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/build/static/css/main.8d57abd6.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/build/static/css/main.8d57abd6.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/build/static/media/altromonlauncher.fe121463dc29d6171df5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/build/static/media/background.bb2f5c380c6ca3bf2517.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/MinecraftApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/MinecraftApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/build/static/css/main.df1cff7c.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/build/static/css/main.df1cff7c.css.map" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +138,7 @@
       <workItem from="1724527520498" duration="1099000" />
       <workItem from="1724694218141" duration="1200000" />
       <workItem from="1724714848316" duration="2785000" />
-      <workItem from="1724727761454" duration="10674000" />
+      <workItem from="1724727761454" duration="12411000" />
     </task>
     <task id="LOCAL-00001" summary="1.4">
       <option name="closed" value="true" />
@@ -179,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724772880515</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="1.71">
+      <option name="closed" value="true" />
+      <created>1724774678402</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1724774678402</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +208,7 @@
     <MESSAGE value="1.4" />
     <MESSAGE value="1.5" />
     <MESSAGE value="1.6" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.6" />
+    <MESSAGE value="1.71" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.71" />
   </component>
 </project>
