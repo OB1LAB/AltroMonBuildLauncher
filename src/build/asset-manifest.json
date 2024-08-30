@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "./static/css/main.8d57abd6.css",
-    "main.js": "./static/js/main.7425d224.js",
+    "main.js": "./static/js/main.93f9caea.js",
     "static/media/altromonlauncher.png": "./static/media/altromonlauncher.fe121463dc29d6171df5.png",
     "static/media/background.png": "./static/media/background.bb2f5c380c6ca3bf2517.png",
     "static/media/elliot.woff2": "./static/media/elliot.2aeaa9d1333dcd4ec6ea.woff2",
     "index.html": "./index.html",
     "main.8d57abd6.css.map": "./static/css/main.8d57abd6.css.map",
-    "main.7425d224.js.map": "./static/js/main.7425d224.js.map"
+    "main.93f9caea.js.map": "./static/js/main.93f9caea.js.map"
   },
   "entrypoints": [
     "static/css/main.8d57abd6.css",
-    "static/js/main.7425d224.js"
+    "static/js/main.93f9caea.js"
   ]
 }
