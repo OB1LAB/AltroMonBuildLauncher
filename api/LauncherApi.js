@@ -1,7 +1,10 @@
-const MinecraftApi = require("./MinecraftApi");
 const { spawn } = require("child_process");
 const settings = require(`${process.env.APPDATA}/AltroMon/settings.json`);
 const fs = require("fs");
+const { Worker } = require("worker_threads");
+const pathLib = require("path");
+const { app } = require("electron");
+
 let servers = {};
 class LauncherApi {
   static async run(MainWindow) {
@@ -19,14 +22,15 @@ class LauncherApi {
       .replace("${userName}", userName)
       .replace("${uuid}", uuid)
       .replace("${accessToken}", accessToken);
-    await MinecraftApi.runServer(
-      selectedServer,
-      jdkVersion,
-      isMods,
-      cmd,
-      path,
-      MainWindow,
-    );
+    const worker = new Worker(pathLib.join(__dirname, "./threadRunServer.js"), {
+      workerData: [selectedServer, jdkVersion, isMods, cmd, path], // Передаем данные в Worker
+    });
+    worker.on("message", (result) => {
+      if (result === "quit") {
+        app.quit();
+      }
+      MainWindow.webContents.send(...result);
+    });
   }
   static getData() {
     return settings;
