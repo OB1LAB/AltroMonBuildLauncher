@@ -315,27 +315,35 @@ const downloadFiles = async (files, path, sizes, totalSize) => {
   const downloadListFile = [];
 
   const downloadFile = async (url, outputPath, filename, fileSize) => {
-    const response = await axios({
-      method: "GET",
-      url: url,
-      responseType: "stream",
-    });
-    return new Promise((resolve, reject) => {
-      const writer = fs.createWriteStream(outputPath);
-      response.data.pipe(writer);
-      writer.on("finish", () => {
-        downloadedSizes += fileSize;
-        parentPort.postMessage([
-          "launcher-download",
-          {
-            content: `Скачивание: ${filename.split("/").pop()}`,
-            step: `Установка [${(downloadedSizes / 1024 / 1024).toFixed(1)}MB/${(totalSize / 1024 / 1024).toFixed(1)}MB]`,
-            progress: ((downloadedSizes / totalSize) * 100).toFixed(0),
-          },
-        ]);
-        resolve("complete");
+    try {
+      const response = await axios({
+        method: "GET",
+        url: url,
+        responseType: "stream",
       });
-    });
+      return new Promise((resolve, reject) => {
+        const writer = fs.createWriteStream(outputPath);
+        response.data.pipe(writer);
+        response.data.on("error", async () => {
+          await downloadFile(url, outputPath, filename, fileSize);
+          resolve("complete");
+        });
+        writer.on("finish", () => {
+          downloadedSizes += fileSize;
+          parentPort.postMessage([
+            "launcher-download",
+            {
+              content: `Скачивание: ${filename.split("/").pop()}`,
+              step: `Установка [${(downloadedSizes / 1024 / 1024).toFixed(1)}MB/${(totalSize / 1024 / 1024).toFixed(1)}MB]`,
+              progress: ((downloadedSizes / totalSize) * 100).toFixed(0),
+            },
+          ]);
+          resolve("complete");
+        });
+      });
+    } catch (e) {
+      await downloadFile(url, outputPath, filename, fileSize);
+    }
   };
   const pLimit = (await import("p-limit")).default;
   const limit = pLimit(1000);
@@ -394,6 +402,14 @@ const syncClientData = async (server, path, isMods, jdkVersion) => {
   );
   filesDownload.reverse();
   if (filesDownload.length > 0) {
+    parentPort.postMessage([
+      "launcher-download",
+      {
+        content: `Начинаем скачивание файлов...`,
+        step: `Всего будет скачано: ${filesDownload.length}`,
+        progress: 0,
+      },
+    ]);
     await downloadFiles(filesDownload, serverPath, sizes, totalSize);
     setTimeout(() => {
       parentPort.postMessage(["launcher-gameInit", ""]);
