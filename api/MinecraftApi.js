@@ -16,6 +16,7 @@ class MinecraftApi {
     // runtime.stderr.on("data", async (data) => {
     //   console.log(data.toString());
     // });
+    let isClose = false;
     runtime.stdout.on("data", (line) => {
       const lineString = line.toString().split(" ");
       // console.log(line.toString());
@@ -28,9 +29,12 @@ class MinecraftApi {
           .toLowerCase()
           .includes("ModLauncher".toLowerCase())
       ) {
-        setTimeout(() => {
-          parentPort.postMessage("quit");
-        }, 5000);
+        if (!isClose) {
+          setTimeout(() => {
+            parentPort.postMessage("quit");
+          }, 5000);
+          isClose = true;
+        }
       }
     });
   }
