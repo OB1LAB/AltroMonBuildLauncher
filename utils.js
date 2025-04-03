@@ -311,20 +311,36 @@ const getDownloadedFiles = async (
 };
 
 const downloadFiles = async (files, path, sizes, totalSize) => {
-  let downloaderSizes = 0;
-  for (const filename of files) {
-    parentPort.postMessage([
-      "launcher-download",
-      {
-        content: `Скачивание: ${filename.split("/").pop()}`,
-        step: `Установка [${(downloaderSizes / 1024 / 1024).toFixed(1)}MB/${(totalSize / 1024 / 1024).toFixed(1)}MB]`,
-        progress: ((downloaderSizes / totalSize) * 100).toFixed(0),
-      },
-    ]);
-    const req_url = `${config.serverUrl}/${filename.substring(2)}`;
-    const response = await axios.get(req_url, {
+  let downloadedSizes = 0;
+  const downloadListFile = [];
+
+  const downloadFile = async (url, outputPath, filename, fileSize) => {
+    const response = await axios({
+      method: "GET",
+      url: url,
       responseType: "stream",
     });
+    return new Promise((resolve, reject) => {
+      const writer = fs.createWriteStream(outputPath);
+      response.data.pipe(writer);
+      writer.on("finish", () => {
+        downloadedSizes += fileSize;
+        parentPort.postMessage([
+          "launcher-download",
+          {
+            content: `Скачивание: ${filename.split("/").pop()}`,
+            step: `Установка [${(downloadedSizes / 1024 / 1024).toFixed(1)}MB/${(totalSize / 1024 / 1024).toFixed(1)}MB]`,
+            progress: ((downloadedSizes / totalSize) * 100).toFixed(0),
+          },
+        ]);
+        resolve("complete");
+      });
+    });
+  };
+  const pLimit = (await import("p-limit")).default;
+  const limit = pLimit(1000);
+  for (const filename of files) {
+    const req_url = `${config.serverUrl}/${filename.substring(2)}`;
     let pathFile;
     if (req_url.split("static/")[1].split()[0].startsWith("jdk")) {
       pathFile =
@@ -335,40 +351,18 @@ const downloadFiles = async (files, path, sizes, totalSize) => {
     fs.mkdirSync(pathFile.split("/").slice(0, -1).join("/"), {
       recursive: true,
     });
-    const writer = fs.createWriteStream(pathFile);
-    response.data.pipe(writer);
-    let downloaded = 0;
-    let lastPercent = 0;
-    response.data.on("data", (data) => {
-      downloaded += Buffer.byteLength(data);
-      const newPercent = Math.round(
-        (downloaded / sizes[filename.split("/").slice(3).join("/")]) * 100,
-      );
-      if (newPercent > lastPercent) {
-        lastPercent = newPercent;
-        parentPort.postMessage([
-          "launcher-download",
-          {
-            content: `Скачивание: ${filename.split("/").pop()}`,
-            step: `Установка [${((downloaderSizes + downloaded) / 1024 / 1024).toFixed(1)}MB/${(totalSize / 1024 / 1024).toFixed(1)}MB]`,
-            progress: (
-              ((downloaderSizes + downloaded) / totalSize) *
-              100
-            ).toFixed(0),
-          },
-        ]);
-      }
-    });
-    async function write() {
-      return new Promise((resolve, reject) => {
-        response.data.on("end", () => {
-          downloaderSizes += sizes[filename.split("/").slice(3).join("/")];
-          resolve("complete");
-        });
-      });
-    }
-    await write();
+    downloadListFile.push(
+      limit(() =>
+        downloadFile(
+          req_url,
+          pathFile,
+          filename,
+          sizes[filename.split("/").slice(3).join("/")],
+        ),
+      ),
+    );
   }
+  await Promise.all(downloadListFile);
   parentPort.postMessage([
     "launcher-download",
     {
